@@ -3,7 +3,56 @@
   background-color: blue;
 } */
 
+/* Import external resoures */
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 
+/* Utilities */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Edu TAS Beginner", sans-serif;
+  font-weight: 900;
+  margin: 0;
+}
+
+/* Body */
+body {
+  background-image: url(../img/cork.png);
+  font-family: "Edu TAS Beginner", sans-serif;
+}
+
+  /* Header */
+  header {
+    background-image: url(../img/wall.png);
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+
+  /* Main */
+
+  .container {
+    max-width: 1024
+  }
+
+
+  .photo {
+    background-color: #fff;
+    box-sizing: content-box;
+    padding: 10px;
+    margin: 10px;
+    flex-basis: 260px;
+
+    p {
+      padding-top: 10px;
+    }
+  }
 
 
 

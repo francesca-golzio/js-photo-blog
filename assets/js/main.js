@@ -12,14 +12,14 @@ const rowEl = document.querySelector('row');
 fetch(endpoint)
   .then(res => res.json())
   .then(photos => {
-    console.log(photos);
+    //console.log(photos);
 
     /* Cycling inside the array */
-   /*  photos.forEach(photo => { */
+    photos.forEach(photo => {
       
       /* Destructuring object */
-      /* const {id, title, date, url} = photo;
-      //console.log(id, title, date, url); */
+      const {id, title, date, url} = photo;
+      console.log(id, title, date, url);
       
       /* Defining markdown */
       /* const markdown = `
@@ -36,7 +36,7 @@ fetch(endpoint)
       console.log(markdown); */
       
       
-   /*  }); */
+    });
     
   })
 

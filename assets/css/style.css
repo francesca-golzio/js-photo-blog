@@ -48,11 +48,7 @@ body {
     margin: 10px;
     flex-basis: 260px;
     
-    h2 {
-      text-align: center;      
-    }
-
-    span {
+      span {
       font-family: "Sometype Mono", monospace;
     }
   }

@@ -15,23 +15,24 @@ fetch(endpoint)
     //console.log(photos);
 
     /* Cycling inside the array */
-    photos.forEach(photo => {
+    photos.forEach((photo) => {
       
       /* Destructuring object */
       const {id, title, date, url} = photo;
-      //console.log(id, title, date, url);
+      console.log(id, title, date, url);
       
-      /* Defining markdown */
+      /* Defining markdown */  // 🤔 da spostare fuori?
+      const titleUp = title.toUpperCase();
       const markdown = `
       <div class="photo col d-flex flex-column justify-content-center">
         <img src="${url}" alt="${title}" id="${id}">
-        <h2 id="titoloPhoto">
-          ${title}
-        </h2>
         <span id="dataPhoto">
           ${date}
         </span>
-        </div>
+        <h2 id="titoloPhoto">
+          ${titleUp}
+        </h2>
+      </div>
       `;
       console.log(markdown);
       

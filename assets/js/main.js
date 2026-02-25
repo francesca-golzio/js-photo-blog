@@ -26,7 +26,7 @@ fetch(endpoint)
       /* Defining markup */  // 🤔 da spostare fuori?
       const titleUp = title.toUpperCase();
       const markup = `
-      <div class="photo ">
+      <div class="photo col-8 col-sm-5 col-lg-4">
         <img src="${url}" alt="${title}" id="${id}" class="img-fluid">
         <p id="dataPhoto">
           ${date}

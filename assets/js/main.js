@@ -27,7 +27,8 @@ fetch(endpoint)
       const titleUp = title.toUpperCase();
       const markup = `
       <div class="photo col-8 col-sm-5 col-lg-4">
-        <img src="${url}" alt="${title}" id="${id}" class="img-fluid">
+        <img src="./assets/img/pin.svg" class="pin">
+        <img src="${url}" alt="${title}" id="${id}" class="img-fluid photoImg">
         <p id="dataPhoto">
           ${date}
         </p>

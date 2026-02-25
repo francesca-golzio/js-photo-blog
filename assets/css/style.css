@@ -35,12 +35,12 @@ body {
   /* Header */
   header {
     background-image: url(../img/wall.png);
-    padding: 15px;
+    padding: 30px;
     text-align: center;
     /* margin: 0 auto; */
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     h1 {
-      font-size: 4rem;      
+      font-size: 7rem;      
     }
   }
 

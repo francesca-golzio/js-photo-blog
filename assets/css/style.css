@@ -6,6 +6,14 @@
 /* Import external resoures */
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 
+
+/* CSS reset */
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
 /* Utilities */
 
 h1,
@@ -29,27 +37,40 @@ body {
     background-image: url(../img/wall.png);
     padding: 15px;
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-bottom: 40px;
   }
 
 
   /* Main */
 
-  .container {
-    max-width: 1024
-  }
-  
-  
-  .photo {
-    background-color: #fff;
-    box-sizing: content-box;
-    padding: 10px;
-    margin: 10px;
-    flex-basis: 260px;
     
-      span {
-      font-family: "Sometype Mono", monospace;
+  .photoFrame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+    .photo {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+      flex-basis: 300px;
+
+      
+      img {
+        flex-basis: 100%;
+        height: 100%;
+      }
+      
+      
+      p {
+        font-family: "Sometype Mono", monospace;
+        margin: 0;
+        padding-top: 20px;
+      }
     }
   }
 

@@ -26,11 +26,11 @@ fetch(endpoint)
       /* Defining markup */  // 🤔 da spostare fuori?
       const titleUp = title.toUpperCase();
       const markup = `
-      <div class="photo col d-flex flex-column justify-content-center">
-        <img src="${url}" alt="${title}" id="${id}">
-        <span id="dataPhoto">
+      <div class="photo ">
+        <img src="${url}" alt="${title}" id="${id}" class="img-fluid">
+        <p id="dataPhoto">
           ${date}
-        </span>
+        </p>
         <h2 id="titoloPhoto">
           ${titleUp}
         </h2>

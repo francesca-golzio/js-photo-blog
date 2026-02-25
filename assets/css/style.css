@@ -22,7 +22,6 @@ h6 {
 /* Body */
 body {
   background-image: url(../img/cork.png);
-  font-family: "Edu TAS Beginner", sans-serif;
 }
 
   /* Header */
@@ -40,17 +39,21 @@ body {
   .container {
     max-width: 1024
   }
-
-
+  
+  
   .photo {
     background-color: #fff;
     box-sizing: content-box;
     padding: 10px;
     margin: 10px;
     flex-basis: 260px;
+    
+    h2 {
+      text-align: center;      
+    }
 
-    p {
-      padding-top: 10px;
+    span {
+      font-family: "Sometype Mono", monospace;
     }
   }
 

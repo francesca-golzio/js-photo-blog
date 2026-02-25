@@ -79,10 +79,10 @@ body {
   }
 
   img.pin {
-        width: 40px;
+        width: 35px;
         position: absolute;
         position-area: top;
-        top: -10px;
+        top: -8px;
       }
 
 

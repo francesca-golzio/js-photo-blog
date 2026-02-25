@@ -19,10 +19,10 @@ fetch(endpoint)
       
       /* Destructuring object */
       const {id, title, date, url} = photo;
-      console.log(id, title, date, url);
+      //console.log(id, title, date, url);
       
       /* Defining markdown */
-      /* const markdown = `
+      const markdown = `
       <div class="photo col d-flex flex-column justify-content-center">
         <img src="${url}" alt="${title}" id="${id}">
         <h2 id="titoloPhoto">
@@ -33,7 +33,7 @@ fetch(endpoint)
         </span>
         </div>
       `;
-      console.log(markdown); */
+      console.log(markdown);
       
       
     });

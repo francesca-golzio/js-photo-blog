@@ -58,7 +58,7 @@ fetch(endpoint)
       //console.log(typeof photo);    
       //console.log(photo);
       photo.addEventListener('click', function() {
-        overlayPrewiewEl.classList.remove('invisible');
+        overlayPrewiewEl.classList.remove('d-none');
       })
       
     }

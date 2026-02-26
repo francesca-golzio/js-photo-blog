@@ -5,7 +5,7 @@
 
 /* Import external resoures */
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 /* CSS reset */
 /* * {
@@ -34,11 +34,30 @@ body {
 
   /* Overlay Prewiew */
   .overlayPrewiew {
-    background-color: #00000076;
+    background-color: #000000d7;
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      padding: 10px;
+      max-width: 100vw;
+      max-height: 100vh;
+      flex-grow: 1;
+    }
+  }
+
+  #closeOverlayPreview {
+    background-color: transparent;
+    border: none;
+    box-shadow: inset;
+    color: rgb(241, 210, 7);
+    font-size: 2rem;
+    align-self: flex-start;
   }
 
 

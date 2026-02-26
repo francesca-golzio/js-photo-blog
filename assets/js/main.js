@@ -18,11 +18,14 @@ fetch(endpoint)
 
     /* Cycling inside the array */
     for (const photo of photos) {
-      
+      const photosEl = document.querySelectorAll("div.photo");
+      const overlayPrewiewEl = document.getElementById("overlayPrewiew");
+      console.log(overlayPrewiewEl);
+
       /* Destructuring object */
-      const {id, title, date, url} = photo;
+      const { id, title, date, url } = photo;
       //console.log(id, title, date, url);
-      
+
       /* Defining markup */  // 🤔 da spostare fuori?
       const titleUp = title.toUpperCase();
       const markup = `
@@ -42,37 +45,28 @@ fetch(endpoint)
       </div>
       `;
       //console.log(markup);
-      
-      /* Printing object datas in page */      
-      photoFrameEl.insertAdjacentHTML("beforeend", markup);      
-      
-    };
-    
-    /*  L’overlay ricompare cliccando una qualunque foto */
-  
-    const photosEl = document.querySelectorAll("div.photo");
-    const overlayPrewiewEl = document.getElementById("overlayPrewiew");
-    console.log(overlayPrewiewEl);
-    
-    for (const photo of photosEl) {
-      //console.log(typeof photo);    
-      //console.log(photo);
-      photo.addEventListener('click', function() {
-        overlayPrewiewEl.classList.remove('d-none');
-      })
-      
-    }
-    
+
+      /* Printing object datas in page */
+      photoFrameEl.insertAdjacentHTML("beforeend", markup);
+
+      /*  L’overlay ricompare cliccando una qualunque foto */
+      for (const photo of photosEl) {
+        photo.addEventListener('click', function () {
+          overlayPrewiewEl.classList.remove('d-none');
+        })
+
+      }
+
     /* L’overlay scompare nuovamente al click del button */
     const escButton = document.getElementById("closeOverlayPreview");
-    
-    escButton.addEventListener('click', function() {
+    escButton.addEventListener('click', function () {
       overlayPrewiewEl.classList.add('d-none');
-      
-    })
-  
+    })  
+
+    }; 
     
     
-    
+
+
+
   })
- 

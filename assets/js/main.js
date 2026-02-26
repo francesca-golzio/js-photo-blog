@@ -26,15 +26,19 @@ fetch(endpoint)
       /* Defining markup */  // 🤔 da spostare fuori?
       const titleUp = title.toUpperCase();
       const markup = `
-      <div class="photo col-8 col-sm-5 col-lg-4">
+      <div class="photo col col-12 col-sm-8 col-md-6 col-lg-4 col-xl-4">
         <img src="./assets/img/pin.svg" class="pin">
-        <img src="${url}" alt="${title}" id="${id}" class="img-fluid photoImg">
-        <p id="dataPhoto">
-          ${date}
-        </p>
-        <h2 id="titoloPhoto">
-          ${titleUp}
-        </h2>
+        <div class="container">
+          <div class="row row-col-1">
+            <img src="${url}" alt="${title}" id="${id}" class="img photoImg col">
+            <p id="dataPhoto" class="">
+            ${date}
+            </p>
+            <h2 id="titoloPhoto" class="col">
+            ${titleUp}
+            </h2>
+          </div>
+        </div>
       </div>
       `;
       console.log(markup);

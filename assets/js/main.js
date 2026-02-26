@@ -62,6 +62,14 @@ fetch(endpoint)
       })
       
     }
+    
+    /* L’overlay scompare nuovamente al click del button */
+    const escButton = document.getElementById("closeOverlayPreview");
+    
+    escButton.addEventListener('click', function() {
+      overlayPrewiewEl.classList.add('d-none');
+      
+    })
   
     
     

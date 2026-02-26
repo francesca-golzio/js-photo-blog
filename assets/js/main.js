@@ -41,11 +41,30 @@ fetch(endpoint)
         </div>
       </div>
       `;
-      console.log(markup);
+      //console.log(markup);
       
       /* Printing object datas in page */      
       photoFrameEl.insertAdjacentHTML("beforeend", markup);      
       
     };
     
+    /*  L’overlay ricompare cliccando una qualunque foto */
+  
+    const photosEl = document.querySelectorAll("div.photo");
+    const overlayPrewiewEl = document.getElementById("overlayPrewiew");
+    console.log(overlayPrewiewEl);
+    
+    for (const photo of photosEl) {
+      //console.log(typeof photo);    
+      //console.log(photo);
+      photo.addEventListener('click', function() {
+        overlayPrewiewEl.classList.remove('invisible');
+      })
+      
+    }
+  
+    
+    
+    
   })
+ 

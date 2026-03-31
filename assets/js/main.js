@@ -20,16 +20,16 @@ fetch(endpoint)
     for (const photo of photos) {
       const photosEl = document.querySelectorAll("div.photo");
       const overlayPrewiewEl = document.getElementById("overlayPrewiew");
-      console.log(overlayPrewiewEl);
+      //console.log(overlayPrewiewEl);
 
       /* Destructuring object */
       const { id, title, date, url } = photo;
       //console.log(id, title, date, url);
 
-      /* Defining markup */  // 🤔 da spostare fuori?
+      /* Defining markup */ 
       const titleUp = title.toUpperCase();
       const markup = `
-      <div class="photo col col-12 col-sm-8 col-md-6 col-lg-4 col-xl-4">
+      <div class="photo col col-10 col-sm-8 col-md-5 col-lg-4 col-xl-3">
         <img src="./assets/img/pin.svg" class="pin">
         <div class="container">
           <div class="row row-col-1">
